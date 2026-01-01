@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Football Boots Shop" />
+        <meta property="og:image" content="thumbnail.jpg">
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <button class="hamburger" id="hamburger-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="cart-icon">
+                <img src="shopping-cart.png" alt="Cart">
+                <span id="cart-count">0</span>
+            </div>
+        </header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#footer-section">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#footer-section">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="cart-dropdown" class="cart-dropdown">
+            <div id="empty-cart-message" style="display: none; text-align: center; margin-bottom: 10px;">Your Cart is currently empty</div>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+        <div id="checkout-popup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <p>Your cart is empty!</p>
+            </div>
+        </div>
+        <main>
+            <h1>Nike Mercurial Products</h1>
+            <div class="products-grid">
+                <div class="product" data-name="Superfly 10 Elite SG-PRO Anti-Clog" data-price="154.99" data-img="1012845_Main_1718531.avif">
+                    <img src="1012845_Main_1718531.avif" alt="Nike Mercurial Superfly">
+                    <h3>Superfly 10 Elite SG-PRO Anti-Clog</h3>
+                    <p>Lightweight and agile for speed.</p>
+                    <p class="price">$154.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-name="Superfly 10 Elite FG" data-price="199.99" data-img="1018987_Main_1826964.avif">
+                    <img src="1018987_Main_1826964.avif" alt="Nike Mercurial Superfly">
+                    <h3>Superfly 10 Elite FG</h3>
+                    <p>Precision and control on the pitch.</p>
+                    <p class="price">$199.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-name="Superfly 9 Elite FG" data-price="134.99" data-img="1023312_Main_1868128.avif">
+                    <img src="1023312_Main_1868128.avif" alt="Nike Mercurial Superfly">
+                    <h3>Superfly 9 Elite FG</h3>
+                    <p>Comfort and durability for matches.</p>
+                    <p class="price">$134.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-name="Superfly 10 Elite" data-price="179.99" data-img="1023372_Main_1884464.avif">
+                    <img src="1023372_Main_1884464.avif" alt="Nike Mercurial Superfly">
+                    <h3>Superfly 10 Elite</h3>
+                    <p>Superior traction and performance.</p>
+                    <p class="price">$179.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <h1>Adidas Predator Products</h1>
+            <div class="products-grid">
+                <div class="product" data-name="Elite Tongue FG" data-price="224.99" data-img="1025543_Main_1906831.jpg">
+                    <img src="1025543_Main_1906831.jpg" alt="Adidas Predator Elite Tongue">
+                    <h3>Elite Tongue FG</h3>
+                    <p>Classic fold-over tongue for a clean strike zone.</p>
+                    <p class="price">$224.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-name="Elite FG-PRO" data-price="209.99" data-img="1018690_Main_1817099.avif">
+                    <img src="1018690_Main_1817099.avif" alt="Adidas Predator Pro">
+                    <h3>Pro</h3>
+                    <p>Engineered for goalscoring precision and ultimate control.</p>
+                    <p class="price">$219.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-name="Elite Laceless FG" data-price="184.99" data-img="1037072_Main_2009002.avif">
+                    <img src="1037072_Main_2009002.avif" alt="Adidas Predator League Laceless">
+                    <h3>Elite Laceless FG</h3>
+                    <p>Laceless design for a seamless fit and feel.</p>
+                    <p class="price">$184.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-name="24 League FG" data-price="149.99" data-img="1026130_Main_1913532.avif">
+                    <img src="1026130_Main_1913532.avif" alt="Adidas Predator League">
+                    <h3>24 League FG</h3>
+                    <p>Versatile performance for dominating on any pitch.</p>
+                    <p class="price">$149.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </main>
+        <footer id="footer-section">
+            <div class="footer-content">
+                <p>Phone: +216 20 106 619</p>
+                <p>Email: mohamed.gharbyy@gmailcom</p>
+                <p><strong>Where you can find us ?</strong></p>
+                <p class="pre-wrap">•  Rue des Jardin II, Kairouan</p>
+                <p class="pre-wrap">•  Cité El Manezah, Sousse</p>
+            </div>
+            <p style="font-family: sans-serif; font-size: 0.8rem; color: rgb(60, 60, 60);">&copy; 2025 Mohamed GHARBI | All rights reserved</p>
+        </footer>
+        <script src="script.js" defer></script>
+    </body>
+</html>
